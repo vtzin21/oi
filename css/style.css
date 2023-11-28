@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+
+
+.athlete-card {
+    border-radius: 5px ;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 1px 1px 7px black;
+    background-color: rgba(244, 67, 54, 0.37);
+
+}
+.bottom-container {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.containerb {
+    text-align: center;
+    padding: 20px;
+}
+
+.container-button .buttonn{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    gap: 1em;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 53%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-container{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 210px;
+}
+
+
+
+
+/* Estilos gerais */
+
+/* Estilos para a página de detalhes */
+.details-container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* Estilos para o container de atletas na página principal */
+.athletes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Uma coluna até 768px */
+@media screen and (max-width: 768px) {
+    .athletes-container {
+        justify-content: center;
+    }
+}
+
+/* Duas colunas até 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .athletes-container {
+        justify-content: space-between;
+    }
+}
+
+/* Quatro colunas depois de 1024px */
+@media screen and (min-width: 1025px) {
+    .athletes-container {
+        justify-content: space-around;
+    }
+}
+
+/* Largura máxima da lista de 1200px */
+@media screen and (min-width: 1201px) {
+    .athletes-container {
+        max-width: 1200px;
+    }
+}
+
+/* Estilos para a seleção de elenco na página principal */
+.select-elenco {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Select até 768px */
+@media screen and (max-width: 768px) {
+    .select-elenco {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Botoes para viewports maiores que 768px */
+@media screen and (min-width: 769px) {
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        margin: 0 10px;
+    }
+}
